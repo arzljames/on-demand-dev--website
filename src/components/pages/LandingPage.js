@@ -12,10 +12,10 @@ const LandingPage = () => {
         className={`${classess.container} flex justify-center items-start flex-col pb-14 relative z-10`}
       >
         <div className="z-20">
-          <h1 className="text-5xl font-bold mb-3 text-main-text-color leading-[1.2]">
+          <h1 className="md:text-5xl text-4xl font-bold md:mb-3 text-main-text-color leading-[1.2]">
             {TAG_LINES.header}
           </h1>
-          <h2 className="text-3xl mb-10 font-light text-main-text-color">
+          <h2 className="md:text-3xl text-2xl md:mb-10 mb-4 font-light text-main-text-color ">
             {TAG_LINES.sub_header}
           </h2>
           <Button className="bg-main-color hover:bg-main-color-dark p-6 text-base">
@@ -26,7 +26,7 @@ const LandingPage = () => {
         <Image
           src={Laptop}
           width={1100}
-          className="absolute right-0 z-[1] object-cover"
+          className="absolute right-0 z-[1] object-cover md:opacity-100 opacity-50"
         />
       </div>
       <div className="min-h-[40vh] w-full bg-[#282a30] flex md:items-center md:justify-between md:px-20 px-6 py-10 md:flex-row flex-col">

@@ -3,6 +3,7 @@ import { NAV_LINKS } from "@/constant";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import React from "react";
+import { FiMenu } from "react-icons/fi";
 
 const Navbar = () => {
   const [scrollPosition, setScrollPosition] = React.useState(0);
@@ -27,7 +28,7 @@ const Navbar = () => {
       }`}
     >
       <h1 className="text-main-text-color font-semibold">Logo Here</h1>
-      <nav>
+      <nav className="md:flex hidden">
         <ul className="flex  transition">
           {NAV_LINKS.map((item, index) => {
             return (
@@ -43,10 +44,13 @@ const Navbar = () => {
       </nav>
       <Button
         variant="outline"
-        className=" shadow-none text-main-color border-main-color hover:bg-main-color hover:text-white z-20"
+        className=" shadow-none md:flex hidden text-main-color border-main-color hover:bg-main-color hover:text-white z-20"
       >
         Contact Us
       </Button>
+      <div className="md:hidden flex cursor-pointer text-white text-2xl rounded-full items-center justify-center w-10 h-10">
+        <FiMenu />
+      </div>
     </header>
   );
 };

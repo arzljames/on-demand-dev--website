@@ -1,6 +1,3 @@
-import project1 from "../assets/projects/project1.png";
-import project2 from "../assets/projects/project2.png";
-
 export const NAV_LINKS = [
   {
     name: "Home",

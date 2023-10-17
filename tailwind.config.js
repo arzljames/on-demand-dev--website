@@ -21,6 +21,8 @@ module.exports = {
         "main-color-dark": "#D14C21",
         "main-text-color": "#EAEAEA",
         "secondary-text-color": "#B7B7B7",
+        dark: "#1f2125",
+        "secondary-dark": "#282A30",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

@@ -1,14 +1,14 @@
 import React from "react";
 import { FaFacebookF, FaYoutube, FaTwitter, FaLinkedin } from "react-icons/fa6";
 import Image from "next/image";
-import logoLight from "../assets/horizontal-logo-light.png";
+import logoLight from "../assets/logo-light.png";
 
 const Footer = () => {
   const date = new Date();
   return (
     <div className="w-full bg-dark min-h-[25vh] py-8 md:px-20 lg:px-[10%] px-6 flex md:items-center justify-center flex-col">
       <Image
-        className="w-[90px] md:w-[100px] mb-6"
+        className="w-[120px] md:w-[150px] mb-6"
         src={logoLight}
         alt="Logo"
       />

@@ -5,7 +5,7 @@ import React from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import logoLight from "../assets/horizontal-logo-light.png";
+import logoLight from "../assets/logo-light.png";
 
 export const Header = () => {
   const [scrollPosition, setScrollPosition] = React.useState(0);
@@ -40,7 +40,11 @@ export const Header = () => {
           {isDrawerOpen ? <FiX /> : <FiMenu />}
         </div>
         <Link href="/#">
-          <Image className="w-[90px] md:w-[100px]" src={logoLight} alt="Logo" />
+          <Image
+            className="w-[120px] md:w-[150px]"
+            src={logoLight}
+            alt="Logo"
+          />
         </Link>
       </div>
       <nav className="md:flex hidden">

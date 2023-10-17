@@ -42,9 +42,18 @@ const ContactForm = () => {
         </div>
       </div>
       <form
-        onSubmit={(e) => e.preventDefault()}
         className="p-2 md:p-8 text-main-text-color flex flex-col flex-1 justify-center"
+        action="https://forms.zohopublic.com/zestyio/form/OnDemandDevsForm/formperma/SO3dwie3U8eooBBIHKaIYuginbFLedcwD6ZBmtbBOwA/htmlRecords/submit"
+        name="form"
+        id="form"
+        method="POST"
+        acceptCharset="UTF-8"
+        encType="multipart/form-data"
+        target="_blank"
       >
+        <input type="hidden" name="zf_referrer_name" value="" />
+        <input type="hidden" name="zf_redirect_url" value="" />
+        <input type="hidden" name="zc_gad" value="" />
         <h2 className="uppercase font-light text-2xl mb-12">
           GET IN <span className="font-bold">TOUCH</span>
         </h2>
@@ -62,6 +71,8 @@ const ContactForm = () => {
                     setFormData({ ...formData, first_name: e.target.value })
                   }
                   type="text"
+                  maxLength={255}
+                  name="Name_First"
                   placeholder="John"
                   className="h-10 rounded bg-transparent border border-[#4e535c] outline-none focus:border-main-color placeholder:font-light placeholder:text-sm w-full pl-8 placeholder:pb-1 text-sm"
                 />
@@ -79,6 +90,8 @@ const ContactForm = () => {
                     setFormData({ ...formData, last_name: e.target.value })
                   }
                   type="text"
+                  maxLength={255}
+                  name="Name_Last"
                   placeholder="Doe"
                   className="h-10 rounded bg-transparent border border-[#4e535c] outline-none focus:border-main-color placeholder:font-light placeholder:text-sm w-full pl-8 placeholder:pb-1 text-sm"
                 />
@@ -98,6 +111,8 @@ const ContactForm = () => {
                   setFormData({ ...formData, email: e.target.value })
                 }
                 type="text"
+                maxLength={255}
+                name="Email"
                 placeholder="example@gmail.com"
                 className="h-10 rounded bg-transparent border border-[#4e535c] outline-none focus:border-main-color placeholder:font-light placeholder:text-sm w-full pl-8 placeholder:pb-1 text-sm"
               />
@@ -131,8 +146,10 @@ const ContactForm = () => {
               onChange={(e) =>
                 setFormData({ ...formData, message: e.target.value })
               }
-              placeholder="Your message here"
-              className="h-24 rounded bg-transparent border border-[#4e535c] outline-none focus:border-main-color resize-none p-2 text-sm placeholder:font-light placeholder:text-sm "
+              placeholder="How can we help you?"
+              name="MultiLine"
+              maxLength={65535}
+              className="h-40 rounded bg-transparent border border-[#4e535c] outline-none focus:border-main-color resize-none p-2 text-sm placeholder:font-light placeholder:text-sm "
             />
           </div>
 

@@ -7,6 +7,7 @@ import {
   IoLocation,
 } from "react-icons/io5";
 import SuccessModal from "@/components/ui/SuccessModal";
+import { ScaleLoader } from "react-spinners";
 
 const ContactForm = () => {
   // Form state
@@ -26,6 +27,13 @@ const ContactForm = () => {
     setTimeout(() => {
       setSuccess(true);
       setIsLoading(false);
+      setFormData({
+        first_name: "",
+        last_name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
     }, 2000);
   };
 
@@ -64,7 +72,7 @@ const ContactForm = () => {
           acceptCharset="UTF-8"
           encType="multipart/form-data"
           target="dummyframe"
-          onSubmit={() => alert("wew")}
+          onSubmit={() => handleSubmit()}
         >
           <iframe name="dummyframe" id="dummyframe" className="hidden"></iframe>
           <input type="hidden" name="zf_referrer_name" value="" />
@@ -155,8 +163,16 @@ const ContactForm = () => {
               />
             </div>
 
-            <button className="w-full bg-main-color rounded h-10 text-sm font-semibold uppercase transition hover:bg-main-color-dark">
-              submit
+            <button
+              className={`w-full ${
+                isLoading ? "bg-main-color-dark select-none" : "bg-main-color"
+              } rounded h-10 text-sm font-semibold uppercase transition hover:bg-main-color-dark`}
+            >
+              {isLoading ? (
+                <ScaleLoader height={10} width={4} color="#fff" />
+              ) : (
+                "SUBMIT"
+              )}
             </button>
           </div>
         </form>

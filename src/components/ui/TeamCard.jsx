@@ -3,7 +3,7 @@ import React from "react";
 const TeamCard = ({ name, position, profile }) => {
   return (
     <div className="w-[49%] md:w-[23%] h-[100%] md:mr-[2%]">
-      <div className=" cursor-pointer bg-main-color  rounded after:content-[''] after:block after:pb-[100%] mb-[2%] relative flex items-end">
+      <div className="bg-main-color  rounded after:content-[''] after:block after:pb-[100%] mb-[2%] relative flex items-end">
         <img
           src={profile}
           alt="Team Profile"

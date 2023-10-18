@@ -6,6 +6,7 @@ import ServiceCard from "@/components/ui/ServiceCard";
 import FeedbackCard from "@/components/ui/FeedbackCard";
 import ProjectCard from "@/components/ui/ProjectCard";
 import TeamCard from "@/components/ui/TeamCard";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -22,9 +23,11 @@ export default function Home() {
             {TAG_LINES.sub_header}
           </h2>
 
-          <button className="bg-main-color text-white hover:bg-main-color-dark  py-3 px-6 md:py-4 md:px-8 text-base font-semibold rounded transition">
-            Schedule Free Consultation
-          </button>
+          <Link href="/contact-us">
+            <button className="bg-main-color text-white hover:bg-main-color-dark  py-3 px-6 md:py-4 md:px-8 text-base font-semibold rounded transition">
+              Schedule Free Consultation
+            </button>
+          </Link>
         </div>
 
         <Image
@@ -66,7 +69,12 @@ export default function Home() {
         <div className=" w-full  min-[350px] flex flex-wrap items-center justify-center">
           {PROJECTS.map((item, index) => {
             return (
-              <ProjectCard key={index} image={item.image} title={item.title} />
+              <ProjectCard
+                key={index}
+                image={item.image}
+                title={item.title}
+                link={item.link}
+              />
             );
           })}
         </div>
@@ -76,19 +84,21 @@ export default function Home() {
         id="team"
         className="w-full bg-dark md:px-20 lg:px-[10%] px-6 py-16"
       >
-        <div className="w-full md:w-[50%] mb-16">
-          <h2 className="text-main-text-color font-bold text-2xl md:text-3xl mb-4 md:text-left text-center">
-            Meet The <span className="text-main-color">Team</span>
-          </h2>
-          <p className="text-secondary-text-color">
-            Welcome to our talented and diverse team! We are a group of
-            dedicated professionals who are passionate about what we do. Get to
-            know us better as we introduce the key members of our team, their
-            roles, and what makes them tick.
-          </p>
+        <div className="w-full flex justify-center mb-16">
+          <div className="w-full md:w-[70%]">
+            <h2 className="text-main-text-color font-bold text-2xl md:text-3xl mb-4 text-center">
+              Meet The <span className="text-main-color">Team</span>
+            </h2>
+            <p className="text-main-text-color text-center">
+              Welcome to our talented and diverse team! We are a group of
+              dedicated professionals who are passionate about what we do. Get
+              to know us better as we introduce the key members of our team,
+              their roles, and what makes them tick.
+            </p>
+          </div>
         </div>
 
-        <div className="flex flex-wrap items-center justify-between md:justify-start">
+        <div className="flex flex-wrap items-center justify-between md:justify-center">
           {TEAM.map((item, index) => {
             return (
               <TeamCard

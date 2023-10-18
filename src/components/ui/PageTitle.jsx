@@ -12,7 +12,7 @@ const PageTitle = ({ subheading, title, color, subtitle }) => {
         <h2
           className={`${
             color ? color : "text-main-text-color"
-          } text-3xl font-extralight relative tracking-wider z-10 uppercase`}
+          } text-2xl md:text-3xl font-extralight relative tracking-wider z-10 uppercase md:text-left text-center`}
         >
           {title}
         </h2>

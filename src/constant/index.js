@@ -72,35 +72,32 @@ export const FEEDBACK = [
 
 export const PROJECTS = [
   {
-    image: "https://418spsjn.media.zestyio.com/project1.png",
+    image: "https://418spsjn.media.zestyio.com/geoblue.png",
     title: "GeoBlue",
+    link: "https://about.geo-blue.com/",
   },
   {
-    image: "https://418spsjn.media.zestyio.com/Project2.png",
-    title: "ZestyIO",
+    image: "https://418spsjn.media.zestyio.com/zesty.png",
+    title: "Zesty.io",
+    link: "https://www.zesty.io/",
   },
 ];
 
 export const TEAM = [
   {
     image: "https://418spsjn.media.zestyio.com/pexels-moose-photos-1036627.jpg",
-    name: "Benjamin Hayes",
-    position: "DevOps Engineer",
+    name: "Francis Samson",
+    position: "Web Developer",
   },
   {
     image: "https://418spsjn.media.zestyio.com/pexels-moose-photos-556068.jpg",
-    name: "Emily Morgan",
-    position: "Frontend Developer",
+    name: "Wilma Alemios",
+    position: "Web Developer",
   },
   {
     image:
       "https://418spsjn.media.zestyio.com/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg",
-    name: "John Doe",
-    position: "Backend Developer",
-  },
-  {
-    image: "https://418spsjn.media.zestyio.com/pexels-moose-photos-1036623.jpg",
-    name: "Olivia Bennett",
-    position: "UI/UX Designer",
+    name: "Timothy Joseph Rabena",
+    position: "Project Director",
   },
 ];

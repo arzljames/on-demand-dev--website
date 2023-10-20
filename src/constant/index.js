@@ -28,23 +28,23 @@ export const TAG_LINES = {
 
 export const SERVICES = [
   {
-    title: "Web Development",
-    body: "We craft dynamic, user-friendly websites and applications, leveraging cutting-edge tech to embody your brand.",
+    title: "CMS Migration",
+    body: "Our seasoned experts specialize in swift, CMS migrations to keep your website innovative.",
     image: "https://418spsjn.media.zestyio.com/ic4.png",
   },
   {
-    title: "Web Design",
+    title: "Website Layout",
     body: "Our designs are not only aesthetically pleasing but also intuitively navigable, ensuring a seamless user experience.",
     image: "https://418spsjn.media.zestyio.com/service7.png",
   },
   {
-    title: "End-User Training",
-    body: "We empower users with the skills and knowledge needed for efficient software utilization, ensuring seamless operations.",
+    title: "Website Migration",
+    body: "Trust us to safeguard your content, maintain SEO integrity, and deliver a website that's better than ever.",
     image: "https://418spsjn.media.zestyio.com/ic3.png",
   },
   {
-    title: "FAST SUPPORT",
-    body: "Count on responsive, reliable, and friendly support for seamless operations.",
+    title: "Technical Documentation",
+    body: "From user manuals and API guides to knowledge base articles and tutorials, we excel at creating documentation tailored to your needs.",
     image: "https://418spsjn.media.zestyio.com/ic1.png",
   },
 ];
@@ -85,19 +85,18 @@ export const PROJECTS = [
 
 export const TEAM = [
   {
-    image: "https://418spsjn.media.zestyio.com/pexels-moose-photos-1036627.jpg",
+    image: "https://3ln123gk.media.zestyio.com/imgpsh_fullsize_anim--1-.png",
     name: "Francis Samson",
     position: "Web Developer",
   },
   {
-    image: "https://418spsjn.media.zestyio.com/pexels-moose-photos-556068.jpg",
+    image: "https://3ln123gk.media.zestyio.com/imgpsh_fullsize_anim.jpg",
     name: "Wilma Alemios",
     position: "Web Developer",
   },
   {
-    image:
-      "https://418spsjn.media.zestyio.com/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg",
-    name: "Timothy Joseph Rabena",
+    image: "https://3ln123gk.media.zestyio.com/1625763454038.jpg",
+    name: "TJ Rabena",
     position: "Project Director",
   },
 ];

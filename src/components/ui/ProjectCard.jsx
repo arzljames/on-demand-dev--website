@@ -13,7 +13,7 @@ const ProjectCard = ({ image, title, link }) => {
     <Link
       href={link}
       target="_blank"
-      className="project-card min-h-[200px] md:min-h-[300px] h-[40vh] md:h-[50vh] w-full md:w-[49%] mb-4 md:mb-[1%] mr-[1%] cursor-pointer rounded overflow-hidden  relative border-secondary-dark border-4 shadow-xl"
+      className="project-card min-h-[200px] md:min-h-[300px] h-[40vh] md:h-[55vh] w-full md:w-[49%] mb-4 md:mb-[1%] mr-[1%] cursor-pointer rounded overflow-hidden  relative border-secondary-dark border-4 shadow-xl"
     >
       <img
         onLoad={handleImageLoad}

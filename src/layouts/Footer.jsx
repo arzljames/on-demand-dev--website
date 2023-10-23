@@ -6,7 +6,7 @@ import logoLight from "../assets/logo-light.png";
 const Footer = () => {
   const date = new Date();
   return (
-    <div className="w-full bg-dark min-h-[25vh] py-8 md:px-20 lg:px-[10%] px-6 flex md:items-center justify-center flex-col">
+    <div className="w-full bg-dark min-h-[25vh] py-8 md:px-20 lg:px-[10%] px-4 flex md:items-center justify-center flex-col">
       <Image
         className="w-[120px] md:w-[150px] mb-6"
         src={logoLight}

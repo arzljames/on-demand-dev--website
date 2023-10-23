@@ -26,10 +26,10 @@ export const Header = () => {
 
   return (
     <header
-      className={`flex justify-between items-center h-16 md:h-20 md:px-20 lg:px-[10%] px-6 w-full select-none  z-20 ${
-        scrollPosition > 500
+      className={`flex justify-between items-center h-16 md:h-20 md:px-20 lg:px-[10%] px-4 w-full select-none  z-20 ${
+        scrollPosition > 100
           ? "sticky top-0 shadow-xl border-[#282A30] border-b bg-opacity-90 backdrop-blur-sm bg-dark"
-          : "md:static sticky top-0 bg-dark"
+          : "md:fixed sticky top-0 bg-dark md:bg-transparent"
       }`}
     >
       <div className="flex items-center">
@@ -67,7 +67,7 @@ export const Header = () => {
 
       <Link
         href="/contact-us"
-        className="border py-2 px-4 rounded transition text-sm md:text-base font-medium shadow-none flex text-main-color border-main-color  hover:bg-main-color hover:text-white z-20"
+        className="border py-2 px-4 rounded transition text-sm md:text-base font-medium shadow-none flex text-white border-white  hover:bg-white hover:text-main-color z-20"
       >
         Contact Us
       </Link>

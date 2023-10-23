@@ -1,6 +1,4 @@
 import { FEEDBACK, PROJECTS, SERVICES, TAG_LINES, TEAM } from "@/constant";
-import Laptop from "../assets/landing-page/laptop.png";
-import Image from "next/image";
 import PageTitle from "@/components/ui/PageTitle";
 import ServiceCard from "@/components/ui/ServiceCard";
 import FeedbackCard from "@/components/ui/FeedbackCard";
@@ -13,33 +11,30 @@ export default function Home() {
     <div className="bg-dark relative z-10">
       <section
         id="home"
-        className="w-full min-h-[350px] md:min-h-[100vh] md:px-20 lg:px-[10%] px-6 flex justify-center items-start flex-col"
+        className="hero w-full min-h-[350px] md:min-h-[100vh] md:px-20 lg:px-[10%] px-4 flex justify-center items-start flex-col"
       >
         <div className="z-20">
-          <h1 className="md:text-5xl text-3xl font-bold md:mb-3 text-main-text-color leading-[1.2]">
+          <h6 className="uppercase font-extralight text-white text-lg md:text-2xl tracking-widest mb-0 md:mb-2">
             {TAG_LINES.header}
-          </h1>
-          <h2 className="md:text-2xl text-base md:mb-10 mb-4 font-light text-main-text-color ">
-            {TAG_LINES.sub_header}
+          </h6>
+          <h2
+            style={{ lineHeight: 1.2 }}
+            className="uppercase font-extrabold text-main-text-color text-3xl md:text-6xl mb-6 md:mb-10 "
+          >
+            YOUR VIRTUAL TEAM OF <br /> EXPERT DEVELOPERS
           </h2>
 
           <Link href="/contact-us">
-            <button className="bg-main-color text-white hover:bg-main-color-dark  py-3 px-6 md:py-4 md:px-8 text-base font-semibold rounded transition">
+            <button className="bg-main-color text-white hover:bg-main-color-dark  py-3 px-6 md:py-4 md:px-8 text-base font-semibold rounded transition hero-cta">
               Schedule Free Consultation
             </button>
           </Link>
         </div>
-
-        <Image
-          alt="Laptop"
-          src={Laptop}
-          className="absolute right-0 z-[1] w-full md:w-[75%] object-cover md:opacity-100 opacity-50"
-        />
       </section>
 
       <section
         id="services"
-        className="w-full bg-secondary-dark md:px-20 lg:px-[10%] px-6 py-10"
+        className="w-full bg-secondary-dark md:px-20 lg:px-[10%] px-4 py-10"
       >
         <PageTitle subheading="Our Services" title="What do we offer?" />
 
@@ -59,7 +54,7 @@ export default function Home() {
 
       <section
         id="work"
-        className="w-full flex md:px-20 lg:px-[10%] px-6 py-[100px] flex-col bg-dark relative items-center"
+        className="w-full flex md:px-20 lg:px-[10%] px-4 py-[100px] flex-col bg-dark relative items-center"
       >
         <PageTitle
           title="Our Work"
@@ -82,7 +77,7 @@ export default function Home() {
 
       <section
         id="team"
-        className="w-full bg-dark md:px-20 lg:px-[10%] px-6 py-16"
+        className="w-full bg-dark md:px-20 lg:px-[10%] px-4 py-16"
       >
         <div className="w-full flex justify-center mb-16">
           <div className="w-full md:w-[70%]">
@@ -114,7 +109,7 @@ export default function Home() {
 
       <section
         id="feedback"
-        className="bg-secondary-dark w-full min-h-[100vh] md:px-20 lg:px-[10%] px-6 py-10 feedback"
+        className="bg-secondary-dark w-full min-h-[100vh] md:px-20 lg:px-[10%] px-4 py-10 feedback"
       >
         <PageTitle title="What clients say" />
 

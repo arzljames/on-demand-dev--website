@@ -30,22 +30,22 @@ export const SERVICES = [
   {
     title: "CMS Migration",
     body: "Our seasoned experts specialize in swift, CMS migrations to keep your website innovative.",
-    image: "https://418spsjn.media.zestyio.com/ic4.png",
+    image: "https://418spsjn.media.zestyio.com/Group-230.svg",
   },
   {
     title: "Website Layout",
     body: "Our designs are not only aesthetically pleasing but also intuitively navigable, ensuring a seamless user experience.",
-    image: "https://418spsjn.media.zestyio.com/service7.png",
+    image: "https://418spsjn.media.zestyio.com/Group-228.svg",
   },
   {
     title: "Website Migration",
     body: "Trust us to safeguard your content, maintain SEO integrity, and deliver a website that's better than ever.",
-    image: "https://418spsjn.media.zestyio.com/ic3.png",
+    image: "https://418spsjn.media.zestyio.com/Group-225.svg",
   },
   {
     title: "Technical Documentation",
     body: "From user manuals and API guides to knowledge base articles and tutorials, we excel at creating documentation tailored to your needs.",
-    image: "https://418spsjn.media.zestyio.com/ic1.png",
+    image: "https://418spsjn.media.zestyio.com/Group-232.svg",
   },
 ];
 
@@ -54,19 +54,19 @@ export const FEEDBACK = [
     name: "Anne Lee",
     email: "@anne_lee",
     image: "https://418spsjn.media.zestyio.com/avatar1.jpg",
-    feedback: `"We engaged with the team for a complex web development project, and they exceeded our expectations in every way."`,
+    feedback: `We engaged with the team for a complex web development project, and they exceeded our expectations in every way.`,
   },
   {
     name: "Mia Brown",
     email: "@miabrown",
     image: "https://418spsjn.media.zestyio.com/avatar2.jpg",
-    feedback: `"Their knowledge of app development, coupled with their creativity and responsiveness, was invaluable throughout the project."`,
+    feedback: `Their knowledge of app development, coupled with their creativity and responsiveness, was invaluable throughout the project.`,
   },
   {
     name: "Liam Anderson",
     email: "@iamliam",
     image: "https://418spsjn.media.zestyio.com/avatar3.jpg",
-    feedback: `"They guided us through the entire process, from concept to launch, and delivered an app that not only met but exceeded our expectations."`,
+    feedback: `They guided us through the entire process, from concept to launch, and delivered an app that not only met but exceeded our expectations.`,
   },
 ];
 

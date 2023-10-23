@@ -5,7 +5,7 @@ import ContactForm from "@/components/form/ContactForm";
 
 const ContactUs = () => {
   return (
-    <div className="w-full min-h-[100vh] bg-dark md:px-20 lg:px-[10%] px-6 flex flex-col relative">
+    <div className="w-full min-h-[100vh] bg-dark md:px-20 lg:px-[10%] px-4 flex flex-col relative">
       <PageTitle
         title="Contact Us"
         subtitle="Do you have any questions? Send us a message!"

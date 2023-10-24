@@ -41,28 +41,7 @@ const ContactForm = () => {
     <>
       {success && <SuccessModal setSuccess={setSuccess} />}
       <div className="w-full rounded-[6px] min-h-[80vh] mb-12 flex bg-secondary-dark overflow-hidden p-2">
-        <div className="w-[40%] h-auto  rounded-[6px] contact-overlay p-4 md:flex flex-col justify-end text-white hidden">
-          <div className="flex items-center mb-4">
-            <div className="rounded-full h-8 w-8 border  border-white flex items-center justify-center mr-4">
-              <IoCall />
-            </div>
-            <p className="text-sm flex-1">9876 543 210</p>
-          </div>
-
-          <div className="flex items-center mb-4">
-            <div className="rounded-full h-8 w-8 border  border-white flex items-center justify-center mr-4">
-              <IoMail />
-            </div>
-            <p className="text-sm flex-1">arzl.lao@zesty.com</p>
-          </div>
-
-          <div className="flex items-center">
-            <div className="rounded-full h-8 w-8 border  border-white flex items-center justify-center mr-4">
-              <IoLocation />
-            </div>
-            <p className="text-sm flex-1">Sample Place, Somewhere else City</p>
-          </div>
-        </div>
+        <div className="w-[40%] h-auto  rounded-[6px] contact-overlay p-4 md:flex flex-col justify-end text-white hidden"></div>
         <form
           className="p-2 md:p-8 text-main-text-color flex flex-col flex-1 justify-center"
           action="https://forms.zohopublic.com/zestyio/form/OnDemandDevsForm/formperma/SO3dwie3U8eooBBIHKaIYuginbFLedcwD6ZBmtbBOwA/htmlRecords/submit"

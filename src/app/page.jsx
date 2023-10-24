@@ -15,13 +15,13 @@ export default function Home() {
       >
         <div className="z-20">
           <h6 className="uppercase font-extralight text-white text-lg md:text-2xl tracking-widest mb-0 md:mb-2">
-            {TAG_LINES.header}
+            VIRTUAL TEAM OF EXPERT DEVELOPERS
           </h6>
           <h2
             style={{ lineHeight: 1.2 }}
             className="uppercase font-extrabold text-main-text-color text-3xl md:text-6xl mb-6 md:mb-10 "
           >
-            YOUR VIRTUAL TEAM OF <br /> EXPERT DEVELOPERS
+            ON-DEMAND DEVELOPERS
           </h2>
 
           <Link href="/contact-us">
